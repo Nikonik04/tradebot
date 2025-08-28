@@ -1,0 +1,23 @@
+telegram:
+  bot_token: "TELEGRAM_BOT_TOKEN"
+  chat_id: "YOUR_CHAT_ID"
+
+bonkbot:
+  enabled: true
+  api_url: "https://api.bonkbot.io/v1/trade"
+  api_key: "PUT_BONKBOT_API_KEY_HERE"
+
+filters:
+  blacklist_tokens: []
+  blacklist_developers: []
+  fake_volume_detection:
+    enabled: true
+    method: "heuristic"
+    heuristic:
+      vol_to_liq_ratio: 20.0
+      min_unique_traders: 5
+
+rugcheck:
+  enabled: true
+  api_url: "https://api.rugcheck.xyz/v1/tokens"
+  api_key: ""
